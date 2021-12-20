@@ -1,0 +1,143 @@
+.header{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header--logo{
+    width: 100px;
+    margin: 0 20px;
+    margin-top: 18px;
+    object-fit: contain;
+}
+
+.header--address{
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-direction: column; */
+}
+
+.header--addressline{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+.header--adressIcon{
+    display: flex;
+    margin-top: 4px;
+    /* margin-left: 100px; */
+}
+.header--search{
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.header--searchcategories{
+    background-color: rgba(255, 249, 249, 0.856);
+    padding: 8px;
+    align-items: center;
+    width: 10%;
+    outline: 0;
+    border: none;
+    display: flex;
+    font-size: 15px;
+    /* height: 20px; */
+    color: black;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.all--categories{
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+.all--categoriesoption{
+    margin-top: 100px;
+    margin-left: 100px;
+}
+/* .header--categories{
+    align-items: center;
+} */
+
+.header--searchInput{
+    padding: 7px;
+    /* height: 20px; */
+    border: none;
+    width: 80%;
+}
+.header--searchicondiv{
+    background-color: #FEBD69 ;
+    width: 6%;
+    margin-left: 0px;
+    margin-right: 05px;
+    height: 38px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.header--searchIcon{
+    background-color: #FEBD69 ;
+    padding: 1px;
+    margin-top: 7px;
+    margin-left: 10px;
+    height: 80px;
+    width: 40px;
+    
+}
+
+.header--nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header--optionflag{
+    margin-top: 5px;
+    margin-left: 8px;
+    height: 25px;
+    width: 30px;
+}
+.arrow--flag{
+    width: 10%;
+    background-color: transparent;
+    color: white;
+    margin-top: 5px;
+    border: none;
+}
+
+.header--option{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.header--optionLineOne{
+    font-size: 12px;
+}
+
+.header--optionLineTwo{
+    font-size: 13px;
+    font-weight: 700;
+}
+.header--optionLineTwo1{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.header--optionBasket{
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.header--basketCount{
+    margin-left: 10px;
+    margin-right: 10px;
+}
