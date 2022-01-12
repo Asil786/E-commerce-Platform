@@ -1,5 +1,5 @@
 .checkout{
-    background-color: bisque;
+    background-color: white;
     display: flex;
     height: max-content;
     padding: 20px;
@@ -10,7 +10,7 @@
 }
 
 .checkout--adv{
-    height: 30%;
+    height: auto;
     width: 97%;
     margin-bottom: 15px;
 }
@@ -22,5 +22,6 @@
 }
 
 .checkout--right{
+    height: 170px;
     background-color: aqua;
 }

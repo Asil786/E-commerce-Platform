@@ -11,7 +11,7 @@ import {Carousel} from 'react-bootstrap';
 
 const CarouselContainer = () => {
     return (
-      <Carousel controls={false} indicators={false}>
+      <Carousel controls={true} indicators={false}>
       <Carousel.Item interval={4000}>
         <img
           className="d-block w-100"

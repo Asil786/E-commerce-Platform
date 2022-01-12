@@ -14,6 +14,7 @@ function Home() {
             id="01"
             title="Up to 50% off | Alexa & Fire TV devices"
             price={4450}
+            image={"https://m.media-amazon.com/images/I/41+EgceMbjL._SY300_SX300_.jpg"}
           />
           <Product
             id="02"
