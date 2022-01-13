@@ -1,0 +1,79 @@
+.login{
+    color: black;
+    /* background-color: lightskyblue; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login--logo{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    object-fit: contain;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login--container{
+    width: 400px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.login--container h1{
+    font-size: 35px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.login--container h5{
+    margin-bottom: 5px;
+}
+.login--container input{
+    height: 35px;
+    padding-left: 10px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    width: 95%;
+    background-color: white;
+}
+.login--container p{
+    margin-top: 15px;
+    font-size: 12px;
+}
+.login--signButton{
+    background-color: #f0c14b;
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: #a88734;
+}
+.login--registerButton{
+    background-color: #f0c14b;
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: #a88734;
+    margin-bottom: 10px;
+}
+
+.information--amazon{
+    font-size: 13px;
+    color: blue;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.amazon--date{
+    font-size: 12px;
+}

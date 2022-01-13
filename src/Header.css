@@ -119,10 +119,12 @@
 }
 
 .header--optionLineOne{
+    text-decoration: none;
     font-size: 12px;
 }
 
 .header--optionLineTwo{
+    text-decoration: none;
     font-size: 13px;
     font-weight: 700;
 }

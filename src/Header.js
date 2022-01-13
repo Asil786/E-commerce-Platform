@@ -77,10 +77,12 @@ function Header() {
       <div className="header--nav">
         <img className="header--optionflag" src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_India.png" alt="flag" />
         <ArrowDropDownIcon className="arrow--flag" />
+        <Link to = '/login' style={{ textDecoration: 'none'}} > 
         <div className="header--option">
           <span className="header--optionLineOne">Hello Guest</span>
           <span className="header--optionLineTwo">Sign In</span>
         </div>
+        </Link>
 
         <div className="header--option">
           <span className="header--optionLineOne">Return</span>
@@ -92,7 +94,7 @@ function Header() {
           <span className="header--optionLineTwo">Prime</span>
         </div>
       </div>
-      <Link to="/checkout">
+      <Link to="/checkout" style={{ textDecoration: 'none'}}>
         <div className="header--optionBasket">
           <ShoppingCartIcon />
           <span className="header--optionLineTwo1 header--basketCount">{cart?.length}</span>

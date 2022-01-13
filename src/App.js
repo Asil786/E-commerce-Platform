@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import CarouselContainer from './component/Carousel';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Checkout from './Checkout';
+import Login from './Login';
 
 
 function App() {
@@ -13,9 +14,12 @@ function App() {
     <Router>
       <div className="App">
         <Switch>
+          <Route path="/login">
+            <Login/>
+          </Route>
           <Route path="/checkout">
             <Header />
-            {/* <CarouselContainer /> */}
+            
             <Checkout />
           </Route>
           <Route path="/">
