@@ -12,6 +12,15 @@ function Login() {
     const signIn = e => {
         e.preventDefault();
         //firebase
+        auth
+            .signInWithEmailAndPassword(email,password)
+            .then((auth) => {
+                // It successfully Signed In User With Email and Password
+                if(auth){
+                    history.push('/')   
+                }
+            })
+            .catch(error => alert(error,Message))
     }
     const register = e => {
         e.preventDefault();
@@ -19,7 +28,9 @@ function Login() {
             .createUserWithEmailAndPassword(email,password)
             .then((auth) => {
                 // It successfully Created a New User With Email and Password
-                console.log(auth); 
+                if(auth){
+                    history.push('/')
+                }
             })
             .catch(error => alert(error,Message))
 
@@ -40,7 +51,7 @@ function Login() {
                    <button type='submit' onClick={signIn} className='login--signButton'>Sign In</button>
                </form>
                <p>By continuing, you agree to Amazon's Conditions of Use and Privacy Notice.</p>
-               <button type='submit' onClick={register}className='login--registerButton'>Create your Amazon Account</button>
+               <button type='submit' onClick={register} className='login--registerButton'>Create your Amazon Account</button>
            </div>
            <div className='information--amazon'>
                <p> Conditions of Use &emsp;&emsp;&nbsp;</p>

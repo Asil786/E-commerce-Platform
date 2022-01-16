@@ -9,7 +9,7 @@ function Home() {
     <div className="home">
 
       <div className="home--container">
-        <div className="home--row">
+        <div className="home--row1">
           <Product
             id="01"
             title="Up to 50% off | Alexa & Fire TV devices"

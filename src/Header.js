@@ -10,7 +10,7 @@ import { useStateValue } from './StateProvider';
 
 // import Navbar from './Navbar';
 function Header() {
-  const [{cart}, dispatch] = useStateValue();
+  const [{cart,user}, dispatch] = useStateValue();
   return (
     <div className="header">
       <Link to="/">
@@ -78,9 +78,9 @@ function Header() {
         <img className="header--optionflag" src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_India.png" alt="flag" />
         <ArrowDropDownIcon className="arrow--flag" />
         <Link to = '/login' style={{ textDecoration: 'none'}} > 
-        <div className="header--option">
+        <div className="header--option1">
           <span className="header--optionLineOne">Hello Guest</span>
-          <span className="header--optionLineTwo">Sign In</span>
+          <span className="header--optionLineTwo">{user ? 'Sign Out' : 'Sign In'}</span>
         </div>
         </Link>
 

@@ -1,5 +1,6 @@
 export const initialState = {
     cart: [],
+    user: null
 };
 
 // Selector
@@ -14,7 +15,7 @@ const reducer = (state, action) => {
       case "ADD_TO_CART":
             return{
                 ...state,    // ... Spread Operator to use a Variable multiple times 
-                cart: [...state.cart, action.item],
+                cart: [...state.cart, action.item]
             };
       case "REMOVE_FROM_CART":
           const index = state.cart.findIndex((cartItem) => cartItem.id === action.id);
@@ -29,6 +30,11 @@ const reducer = (state, action) => {
           return{
               ...state,
               cart: newCart
+          }
+      case "SET_USER":
+          return{
+              ...state,
+              user: action.user
           }
       default:
           return state;

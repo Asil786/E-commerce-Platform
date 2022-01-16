@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     height: 60px;
+    width: 100%;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -109,8 +110,14 @@
     margin-top: 5px;
     border: none;
 }
-
 .header--option{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.header--option1{
     color: white;
     display: flex;
     flex-direction: column;
@@ -143,3 +150,42 @@
     margin-left: 10px;
     margin-right: 10px;
 }
+
+/* @media screen and (max-width: 480px){
+    .header--logo{
+        width: 60px;
+    }
+    .header--adressIcon{
+        margin-left: -500px;
+    }
+    .header--optionflag{
+        margin-left: -550px;
+    }
+    .arrow--flag{
+        margin-left: -40px;
+    }
+    .all--categories{
+        width: 100px;
+        font-size: 10px;
+    }
+    .header--searchInput{
+        width: 25%;
+        height: 30px;
+    }
+    .header--searchicondiv{
+        width: 32px;
+        height: 30px;
+    }
+    .header--searchIcon{
+        margin-top: 5px;
+        margin-left: 4px;
+        width: 5px;
+    }
+    .header--option1{
+        margin-left: 400px;
+    }
+    .header--option{
+        display: none;
+        }
+    
+} */
