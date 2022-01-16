@@ -1,3 +1,4 @@
+
 import React from 'react';
 import CurrencyFormat from 'react-currency-format';
 import { useStateValue } from './StateProvider';
@@ -24,7 +25,7 @@ function Subtotal() {
               thousandSeparator = {true}
               prefix = {"₹"}
             />
-           <button>Proceed to Buy</button>
+           <button className="subtotal--button">Proceed to Buy</button>
         </div>
     )
 }

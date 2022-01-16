@@ -6,11 +6,19 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import { Link } from 'react-router-dom';
 import { useStateValue } from './StateProvider';
+import { auth } from './firebase';
 
 
 // import Navbar from './Navbar';
 function Header() {
   const [{cart,user}, dispatch] = useStateValue();
+  const handleAuthentication = () => {
+    if(user){
+      auth.signOut();
+    }
+  }
+
+
   return (
     <div className="header">
       <Link to="/">
@@ -19,7 +27,7 @@ function Header() {
       <div className="header--address">
         <LocationOnOutlinedIcon className="header--adressIcon" />
         <div className="header--addressline">
-          <span className="header--optionLineOne"> Hello</span>
+          <span className="header--optionLineOne"> Hello Guest</span>
           <span className="header--optionLineTwo"> Select your address</span>
         </div>
       </div>
@@ -77,19 +85,19 @@ function Header() {
       <div className="header--nav">
         <img className="header--optionflag" src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_India.png" alt="flag" />
         <ArrowDropDownIcon className="arrow--flag" />
-        <Link to = '/login' style={{ textDecoration: 'none'}} > 
-        <div className="header--option1">
-          <span className="header--optionLineOne">Hello Guest</span>
+        <Link to = {!user && '/login'} style={{ textDecoration: 'none'}} > 
+        <div onClick={handleAuthentication} className="header--option1">
+          <span className="header--optionLineOne">Hello {!user ? 'Guest' : user.email}</span>
           <span className="header--optionLineTwo">{user ? 'Sign Out' : 'Sign In'}</span>
         </div>
         </Link>
 
-        <div className="header--option">
+        <div className="header--option2">
           <span className="header--optionLineOne">Return</span>
           <span className="header--optionLineTwo">& Order</span>
         </div>
 
-        <div className="header--option">
+        <div className="header--option3">
           <span className="header--optionLineOne">Your</span>
           <span className="header--optionLineTwo">Prime</span>
         </div>

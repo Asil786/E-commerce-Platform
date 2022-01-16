@@ -124,7 +124,20 @@
     margin-left: 10px;
     margin-right: 10px;
 }
-
+.header--option2{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.header--option3{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+}
 .header--optionLineOne{
     text-decoration: none;
     font-size: 12px;
@@ -151,9 +164,10 @@
     margin-right: 10px;
 }
 
-/* @media screen and (max-width: 480px){
+@media screen and (max-width: 480px){
     .header--logo{
         width: 60px;
+        z-index: 10000000;
     }
     .header--adressIcon{
         margin-left: -500px;
@@ -165,11 +179,13 @@
         margin-left: -40px;
     }
     .all--categories{
-        width: 100px;
+        /* margin-left: 4px; */
+        width: 40px;
         font-size: 10px;
     }
     .header--searchInput{
-        width: 25%;
+        /* margin-left: 4px; */
+        width: 10%;
         height: 30px;
     }
     .header--searchicondiv{
@@ -182,10 +198,105 @@
         width: 5px;
     }
     .header--option1{
-        margin-left: 400px;
+        margin-left: 600px;
     }
     .header--option{
         display: none;
-        }
+    }
+    .header--option2{
+        display: none;
+    }
+    .header--searchcategories{
+        margin-left: 6px;
+        width: 50px;
+    }  
     
-} */
+}
+@media screen and (max-width: 576px){
+    .header--logo{
+        width: 60px;
+        z-index: 10000000;
+    }
+    .header--adressIcon{
+        margin-left: -550px;
+    }
+    .header--optionflag{
+        margin-left: -600px;
+    }
+    .arrow--flag{
+        margin-left: -100px;
+    }
+    .all--categories{
+        /* margin-left: 4px; */
+        width: 40px;
+        font-size: 10px;
+    }
+    .header--searchInput{
+        /* margin-left: 4px; */
+        width: 40%;
+        height: 30px;
+    }
+    .header--searchicondiv{
+        width: 32px;
+        height: 30px;
+    }
+    .header--searchIcon{
+        margin-top: 5px;
+        margin-left: 4px;
+        width: 5px;
+    }
+    .header--option1{
+        margin-left: 500px;
+    }
+    .header--option3{
+        display: none;
+    }
+    .header--searchcategories{
+        margin-left: 6px;
+        width: 50px;
+    }  
+}
+@media screen and (max-width: 768px){
+    .header--logo{
+        width: 60px;
+        z-index: 10000000;
+    }
+    .header--adressIcon{
+        margin-left: -700px;
+    }
+    .header--optionflag{
+        margin-left: -750px;
+    }
+    .arrow--flag{
+        margin-left: -250px;
+    }
+    .all--categories{
+        /* margin-left: 4px; */
+        width: 40px;
+        font-size: 10px;
+    }
+    .header--searchInput{
+        /* margin-left: 4px; */
+        width: 30%;
+        height: 30px;
+    }
+    .header--searchicondiv{
+        width: 32px;
+        height: 30px;
+    }
+    .header--searchIcon{
+        margin-top: 5px;
+        margin-left: 4px;
+        width: 5px;
+    }
+    .header--option1{
+        margin-left: 850px;
+    }
+    /* .header--option{
+        display: none;
+    } */
+    .header--searchcategories{
+        margin-left: 6px;
+        width: 50px;
+    }  
+}
