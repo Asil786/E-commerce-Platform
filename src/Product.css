@@ -1,4 +1,6 @@
 .product{
+    border: 1px solid black;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     background-color: #fff;
@@ -13,7 +15,12 @@
     max-height: 500px; 
     min-width: 200px;
 }
-
+.product:hover{
+    transform: scale(0.9);
+    transition: 0.2s ease-in-out;
+    transition-delay: 0.1s;
+    filter: brightness(100%);
+}
 .product--image{
     justify-content: center;
     align-items: center;
@@ -50,5 +57,14 @@
     border-color: white;
     margin-top: 10px;
 }
-/* 
- */
+.product--button:hover{
+    background-color: yellow;
+    color: red;
+    transition-delay: 0.1s;
+}
+@media screen and (max-width: 650px) {
+    .product:hover{
+       transform: none;
+       transition: none;
+    }
+}

@@ -40,7 +40,7 @@ function Login() {
     return (
         <div className='login'>
             <Link to = "/">
-              <img className="login--logo" src="https://www.citypng.com/public/uploads/preview/-11596409153ixy8eolhxq.png" alt="amazon" />
+              <img className="login--logo" src="login1.png" alt="amazon" />
            </Link>
            <div className='login--container'>
                <h1>Sign-in</h1>

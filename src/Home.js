@@ -14,7 +14,7 @@ function Home() {
             id="01"
             title="Up to 50% off | Alexa & Fire TV devices"
             price={4450}
-            image={"https://m.media-amazon.com/images/I/41+EgceMbjL._SY300_SX300_.jpg"}
+            image={"https://m.media-amazon.com/images/I/61u0y9ADElL._AC_UY218_.jpg"}
           />
           <Product
             id="02"
@@ -32,13 +32,13 @@ function Home() {
         <div className="home--row">
           <Product
             id="05"
-            title="HP 15 (2021) Thin & Light 11th Gen Core i3 Laptop, 8 GB RAM, 1TB HDD,"
+            title="HP 15 Thin & Light 11th Gen Core i3 Laptop"
             price={500}
             image="https://m.media-amazon.com/images/I/81Ne5qKmE8L._SL1500_.jpg"
           />
           <Product
             id="06"
-            title="Redmi 139 cm (55 inches) 4K Ultra HD Android Smart LED TV X55|L55M6-RA (Black) (2021 Model)"
+            title="Redmi 139 cm (55 inches) 4K Ultra HD Android Smart LED TV (Black)"
             price={50}
             image="https://images-eu.ssl-images-amazon.com/images/I/51DG3OI8blL._SY300_SX300_QL70_FMwebp_.jpg"
           />

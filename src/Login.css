@@ -54,7 +54,17 @@
     height: 30px;
     border: 1px solid;
     margin-top: 10px;
-    border-color: #a88734;
+    /* border-color: #a88734; */
+}
+.login--signButton:hover{
+    background-color: yellow;
+    border: 1px solid black;
+    color: red;
+}
+.login--registerButton:hover{
+    background-color: yellow;
+    border: 1px solid black;
+    color: red;
 }
 .login--registerButton{
     background-color: #f0c14b;
@@ -63,7 +73,6 @@
     height: 30px;
     border: 1px solid;
     margin-top: 10px;
-    border-color: #a88734;
     margin-bottom: 10px;
 }
 
@@ -76,4 +85,9 @@
 }
 .amazon--date{
     font-size: 12px;
+}
+@media screen and (max-width: 480px) {
+    .login--container{
+        width: 300px;
+    }
 }

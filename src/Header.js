@@ -22,12 +22,12 @@ function Header() {
   return (
     <div className="header">
       <Link to="/">
-        <img className="header--logo" src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="amazon" />
+        <img className="header--logo" src="5.jpg" alt="amazon" />
       </Link>
       <div className="header--address">
         <LocationOnOutlinedIcon className="header--adressIcon" />
         <div className="header--addressline">
-          <span className="header--optionLineOne"> Hello Guest</span>
+          <span className="header--optionLineOne"> Hello {!user ? 'Guest' : user.email}</span>
           <span className="header--optionLineTwo"> Select your address</span>
         </div>
       </div>

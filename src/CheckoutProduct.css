@@ -13,9 +13,15 @@
     color: black;
     border: 1px solid;
     text-align: center;
-    font-size: 17px;
-    width: 200px;
+    margin-left: 15px;
+    font-size: 23px;
+    width: 250px;
     margin-top: 10px;
+}
+.checkoutProduct--info button:hover{
+    border: 1px solid black;
+    background-color: yellow;
+    color: red;
 }
 .checkoutProductImage{
     object-fit: contain;
@@ -23,89 +29,64 @@
     height: 250px;
 }
 .checkoutProduct--title{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 800;
 }
 .checkoutProduct--price{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 800;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 650px) {
     .checkoutProduct{
         display: flex;
-        width: 150px;
+        width: 100px;
         flex-direction: row;
     }
     .checkoutProductImage{
         object-fit: contain;
         align-items: center;
-        width: 200px;
+        width: 120px;
         justify-content: center;
-        margin-top: 10px;
+        margin-top: -30px;
     }
     .checkoutProduct--title{
-        margin-left: -40px;
-        font-size: 20px;
+        width: 158px;
+        margin-left: -30px;
+        font-size: 17px;
     }
     .checkoutProduct--price{
-        font-size: 20px;
-        margin-left: -40px;
+        font-size: 17px;
+        margin-left: -30px;
     }
     .checkoutProduct--info button{
+        width: 150px;
+        font-size: 15px;
+        margin-top: -20px;
         margin-left: -30px;
     }
 }
 @media screen and (max-width: 576px) {
-    .checkoutProduct{
-        display: flex;
-        width: 100px;
-        flex-direction: row;
-    }
     .checkoutProductImage{
         object-fit: contain;
         align-items: center;
-        width: 200px;
+        width: 140px;
         justify-content: center;
-        margin-top: 10px;
+        margin-top: -30px;
     }
     .checkoutProduct--title{
-        width: 200px;
-        margin-left: -5px;
+        width: 170px;
+        margin-left: -30px;
         font-size: 20px;
     }
     .checkoutProduct--price{
         font-size: 20px;
-        margin-left: -5px;
+        margin-left: -30px;
     }
     .checkoutProduct--info button{
-        margin-left: -5px;
-    }
-}
-@media screen and (max-width: 768px) {
-    .checkoutProduct{
-        display: flex;
-        width: 100px;
-        flex-direction: row;
-    }
-    .checkoutProductImage{
-        object-fit: contain;
-        align-items: center;
-        width: 200px;
-        justify-content: center;
-        margin-top: 10px;
-    }
-    .checkoutProduct--title{
-        margin-top: 20px;
-        width: 200px;
-        margin-left: auto;
-        font-size: 20px;
-    }
-    .checkoutProduct--price{
-        font-size: 20px;
-        margin-left: auto;
-    }
-    .checkoutProduct--info button{
-        margin-left: auto;
+        width: 150px;
+        font-size: 17px;
+        margin-top: -20px;
+        margin-left: -30px;
     }
 }
