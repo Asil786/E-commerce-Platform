@@ -46,8 +46,10 @@ function Login() {
                <h1>Sign-in</h1>
                <form>
                    <h5>Email</h5>
+                   <img className='login--user' src="user.png" alt="amazon" />
                    <input type='text' value={email} onChange={e => setEmail(e.target.value)}/>
                    <h5>Password</h5>
+                   <img className='login--user' src="lock.png" alt="amazon" />
                    <input type='password' value={password} onChange={e => setPassword(e.target.value)} />
                    <button type='submit' onClick={signIn} className='login--signButton'>Sign In</button>
                </form>
