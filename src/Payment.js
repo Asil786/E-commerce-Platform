@@ -4,16 +4,18 @@ import React, { useState, useEffect} from "react";
 import CurrencyFormat from "react-currency-format";
 import CheckoutProduct from "./CheckoutProduct";
 import "./Payment.css";
-import axios from 'axios'
+import axios from 'axios';
 import { getCartTotal } from "./reducer";
 import { useStateValue } from "./StateProvider";
+import { useHistory } from "react-router-dom";
 // Install stripe :
 // npm i @stripe/stripe-js
 // npm i @stripe/react-stripe-js
 
 
 function Payment() {
-  const [{ cart, user }, dispatch] = useStateValue();
+  const[{ cart, user }, dispatch] = useStateValue();
+  const history = useHistory();
   const stripe = useStripe();
   const elements = useElements();
   const [error, setError] = useState(null);
@@ -33,7 +35,7 @@ useEffect(() => {
     setClientSecret(response.data.clientSecret);
   }
   getClientSecret();
-},[cart])
+}, [cart]);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -42,7 +44,12 @@ useEffect(() => {
       payment_method: {
         card: elements.getElement(CardElement)
       }
-    });
+    }).then( ({paymentIntent}) => {
+      setSucceeded(true);
+      setError(null);
+      setProcessing(false)
+      history.replace('/orders')
+    })
   };
 
   const handleChange = (event) => {
